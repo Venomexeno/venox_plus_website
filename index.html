@@ -693,15 +693,11 @@
       text-align: center;
     }
 
-    .footer__brand {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      margin-bottom: 18px;
-    }
-
-    .footer__brand span {
-      color: var(--red-bright);
+    .footer__logo {
+      width: 76px;
+      height: auto;
+      margin: 0 auto 18px;
+      filter: drop-shadow(0 0 16px rgba(229, 9, 20, .45));
     }
 
     .footer__text {
@@ -906,7 +902,7 @@
           <ul class="dl-specs">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Version <b class="meta-version">v0.9.4</b></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> APK file <b>~120 MB</b></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Android 6.0 and above</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Android 7.0 and above</li>
           </ul>
 
           <a class="btn btn-primary" data-download="apk" download onclick="increaseDownloads()">
@@ -930,7 +926,7 @@
 
           <ul class="dl-specs">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Version <b class="meta-version">v0.9.4</b></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Installer <b>.EXE</b> with auto-updates</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Installer <b>.EXE</b> with update alerts</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Windows 10 &amp; 11</li>
           </ul>
 
@@ -949,7 +945,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer__brand">VENOX<span>PLUS</span></div>
+    <img src="assets/images/logo.png" class="footer__logo" alt="Venox Plus">
     <p class="footer__text">
       Venox does not host or upload any media files on its servers.
       All media content is provided by third-party services and publicly available sources.
@@ -1009,7 +1005,7 @@
     }
 
     /* ===== CONFIG ===== */
-    const APP_VERSION = "0.9.4";
+    const APP_VERSION = "0.9.5";
     const RELEASE_BASE =
       `https://github.com/Venomexeno/venox_plus_website/releases/download/v${APP_VERSION}`;
     const APK_URL = `${RELEASE_BASE}/venox-plus.apk`;
